@@ -53,8 +53,9 @@ int* bubbleSort(int *arr, int arrSize){
 int main()
 {
     int arr[] = {10,1,0,20,50};
-    bubbleSort(arr, sizeof(arr)/sizeof(int));
-    for(int i=0; i<sizeof(arr)/sizeof(int); i++)
+    int arrSize = sizeof(arr)/sizeof(int);
+    bubbleSort(arr, arrSize);
+    for(int i=0; i<arrSize; i++)
         cout<< arr[i]<<endl;
 
     return 0;
